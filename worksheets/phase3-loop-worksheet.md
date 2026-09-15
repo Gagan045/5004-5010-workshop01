@@ -22,7 +22,7 @@ Is that the correct starting state for a fresh assignment? **Yes / No** — why?
 
 Pick one failing test. Copy its name:
 
-`________________________________________`
+`_____________________ALL Passed in First attempt___________________`
 
 **In your own words — not copied from the output — what did that test want the code to do?**
 
@@ -36,7 +36,7 @@ Pick one failing test. Copy its name:
 
 ### 3. Make it pass, then re-run
 
-Tests passed now: ________   Tests failed now: ________
+Tests passed now: 2   Tests failed now: 0
 
 ---
 
@@ -46,11 +46,11 @@ Write the difference in one sentence each.
 
 **A test failure means:**
 
-<br><br>
+<br>The Expected Output is not matching with the actual output.<br>
 
 **A build error means:**
 
-<br><br>
+<br>While we run the code their might be any error while building like syntax error.<br>
 
 **Which of the two should make you ask for help immediately?**
 
@@ -66,11 +66,11 @@ Write the difference in one sentence each.
 
 Full path to the coverage report on your machine:
 
-`________________________________________________________`
+`Users/gagan/Projects/5004-5010-assignment00/build/reports/tests/test/index.html`
 
 Full path to the checkstyle report:
 
-`________________________________________________________`
+`Users/gagan/Projects/5004-5010-assignment00/build/reports/chechsytle/test/index.html`
 
 **Coverage says a number. Why is that number a poor target to aim at in this course?**
 *(The provided tests already cover almost every line.)*
@@ -83,8 +83,8 @@ Full path to the checkstyle report:
 
 **Why must you run `./gradlew test` rather than `gradle test`?**
 
-<br><br>
+<br>we didnt install gradlew and we are gradlew wrapper class so we did to run this way<br>
 
 **What would go wrong if you installed Gradle yourself and used that?**
 
-<br><br>
+<br>Installing a gradle may differ in version so this might break the exisiting plugins.so its better to use the wrapper class<br>

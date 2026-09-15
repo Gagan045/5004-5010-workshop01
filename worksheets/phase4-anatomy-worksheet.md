@@ -1,6 +1,6 @@
 # Worksheet — Phase 4: Project anatomy
 
-**Name:** ___________________________
+**Name:** Gagan
 
 Read `handouts/project-anatomy.md` first.
 
@@ -16,7 +16,7 @@ package edu.northeastern.shelter;
 
 Its file is called `Animal.java`. **Write the full path from the project root:**
 
-`src/____________________________________________________`
+`src/main/java/edu/northeastern/shelther/Animal.java`
 
 ---
 
@@ -24,7 +24,7 @@ Its file is called `Animal.java`. **Write the full path from the project root:**
 
 **Why is the folder chain so deep? Give the actual reason, not "it is the convention".**
 
-<br><br><br>
+<br>This is enforced by the complier that the file name should match the class name.<br><br>
 
 ---
 
@@ -34,17 +34,17 @@ You move `Greeting.java` up one directory, leaving the `package` line untouched.
 
 **What happens, and at what moment — writing, compiling, or running?**
 
-<br><br>
-
+<br>while Writing, the class cant be recongized<br>
+ .While Compliing there will be a error and the code doesnt run
 ---
 
 ### 4. main vs test
 
 | | `src/main/java` | `src/test/java` |
 |---|---|---|
-| What lives here? | | |
-| Shipped to a user? | | |
-| Can use JUnit? | | |
+| What lives here? | Programs| Jnit tests(test cases)|
+| Shipped to a user? | yes| no|
+| Can use JUnit? | no| yes|
 
 ---
 
@@ -54,7 +54,7 @@ You move `Greeting.java` up one directory, leaving the `package` line untouched.
 
 **Why is that deliberate? What does the test gain by sharing the package?**
 
-<br><br><br>
+<br>Tests are private class and to access the programs we need to folow the naming nomenclature if not we need to make the public.<br><br>
 
 ---
 
@@ -64,13 +64,13 @@ For each, say who can see it:
 
 | Declaration | Who can see it |
 |---|---|
-| `public int x;` | |
-| `private int x;` | |
-| `int x;` *(no modifier)* | |
+| `public int x;` | anyone in the package |
+| `private int x;` |specific to class |
+| `int x;` *(no modifier)* | everyone in the package|
 
 **Which one depends on packages existing to mean anything at all?**
 
-<br>
+<br>Private.
 
 ---
 
@@ -78,7 +78,7 @@ For each, say who can see it:
 
 | File | Which folder? |
 |---|---|
-| A new class you wrote | |
-| A test you wrote | |
-| `LLM-Evaluation.md` | |
-| Your code-walk video | |
+| A new class you wrote |main/Java |
+| A test you wrote | test/java|
+| `LLM-Evaluation.md` | submission|
+| Your code-walk video | canvas|
